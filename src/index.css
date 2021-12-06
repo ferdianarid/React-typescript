@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #FFF;
+    font-family: "SF Pro Display", sans-serif;
+}
+
+body {
+    margin: 2rem;
+}
