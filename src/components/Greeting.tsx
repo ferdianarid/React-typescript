@@ -2,7 +2,7 @@ import React from 'react'
 
 type Username = {
        name: string,
-       orders: number,
+       orders?: number,
        isCompleted: boolean
 }
 

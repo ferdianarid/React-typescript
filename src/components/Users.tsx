@@ -1,14 +1,16 @@
 import React from 'react'
 
 type UsersProps = {
-       firstName: string,
-       lastName: string
+       users: {
+              firstName: string,
+              lastName: string
+       }
 }
 
 export default function Users( props: UsersProps ) {
        return (
               <div>
-                     <h1>Hi { props.firstName } { props.lastName }</h1>
+                     <h1>Hi my name is { props.users.firstName } { props.users.lastName }</h1>
               </div>
        )
 }
