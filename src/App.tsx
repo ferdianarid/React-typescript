@@ -1,34 +1,28 @@
-import React from 'react';
+// import React from 'react';
 
 // import Greeting Components
-import Greeting from './components/Greeting';
+// import Greeting from './components/Greeting';
 // import Users from './components/Users';
 
 // import PersonList from './components/PersonList';
 
-import { Status } from "./components/Status"
+// import { Status } from "./components/Status"
 
-import { Heading } from "./components/Heading"
-import Books from './components/Books';
+// import { Heading } from "./components/Heading"
+// import Books from './components/Books';
 
 // import {name, userListName } from "../src/apis/Users"
 
+// import { TestExam } from "./components/TestExam"
+
+import { ButtonPrimary, ButtonSecondary } from "./components/Button"
 function App() {
 	return (
 		<div className="App">
-
-			{/* <Greeting name="Ferdian" orders={22} isCompleted={ true } />
-			<Users users={name} />
-			<PersonList nameList={userListName} /> */}
-
-			<Status  status="success" />
-			<Heading children="Indonesia" />
-
-			<Books>
-				<Heading>Books hooked in Campuss Bookself</Heading>
-			</Books>
-
-			<Greeting name="Ferdian" orders={33} isCompleted={false} />
+			<div className="m-4">
+				<ButtonPrimary handleClick={(event) => console.log("Button Primary", event)} />
+				<ButtonSecondary handleClick={(event) => console.log("Button Secondary", event)} />
+			</div>
 		</div>
 	);
 }
