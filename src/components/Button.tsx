@@ -1,4 +1,6 @@
-type PropsButton = {
+// Interface Props Button
+interface PropsButton {
+       styles?: React.CSSProperties,
        handleClick: ( event : React.MouseEvent<HTMLButtonElement>, id: number ) => void
 }
 
