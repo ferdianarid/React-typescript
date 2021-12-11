@@ -28,13 +28,14 @@ const HeadingInformations = ( props: HeadingProps ) => {
 
 // Interface Manual Styling
 interface manualStyles {
-       styles: React.CSSProperties
-} 
+       styles: React.CSSProperties,
+       children: React.ReactNode
+}
 
 // Manual Styling
 const HeadingStyles = ( props: manualStyles ) => {
        return (
-              <h1 style={ props.styles }>Manual Style with CSS Properties</h1>
+              <h1 style={ props.styles }>{ props.children }</h1>
        )
 }
 // <HeadingStyles styles={{ color: "skyblue", fontWeight: "bold", fontSize: "32px" }} />

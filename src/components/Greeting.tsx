@@ -1,12 +1,24 @@
 import React from 'react'
 
-type Username = {
+// import Heading Warning
+import { HeadingWarning } from "./Heading"
+
+// interfaces Username
+interface Username {
        name: string,
        orders?: number,
        isCompleted: boolean
 }
 
-export default function Greeting(props: Username) {
+// interfaces ExamProps
+interface ExamProps {
+       name: string,
+       messageReceived?: number,
+       isLoggedIn: boolean
+}
+
+// Greeting
+const Greeting = (props: Username) => {
        return (
               <div>
                      <h1>Hello my name is { props.name }. You have { props.orders } orders.</h1>
@@ -16,3 +28,5 @@ export default function Greeting(props: Username) {
               </div>
        )
 }
+
+export { Greeting }
